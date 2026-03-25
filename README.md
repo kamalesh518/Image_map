@@ -1,522 +1,184 @@
-Ex04 Places Around Me
-Date:25/03/2025
-AIM
+# Ex04 Places Around Me
+
+### Name : Kamalesh y
+### Reg.no:24004024
+
+
+## AIM
 To develop a website to display details about the places around my house.
 
-DESIGN STEPS
-STEP 1
+## DESIGN STEPS
+
+### STEP 1
 Create a Django admin interface.
 
-STEP 2
+### STEP 2
 Download your city map from Google.
 
-STEP 3
-Using tag name the map.
+### STEP 3
+Using ```<map>``` tag name the map.
 
-STEP 4
-Create clickable regions in the image using tag.
+### STEP 4
+Create clickable regions in the image using ```<area>``` tag.
 
-STEP 5
+### STEP 5
 Write HTML programs for all the regions identified.
 
-STEP 6
+### STEP 6
 Execute the programs and publish them.
 
-CODE
-map.html
-
-{% load static %}
-<title>RAMANATHAPURAM MAP</title>
-<body>
-    <center><h1>Kamalesh y (24004024)</h1>
-<img src="{% static 'rmd.png'%}" usemap="#image-map"></center>
-
-<map name="image-map">
-    <area target="" alt="Pamban Bridge" title="Pamban Bridge" href="pamban.html" coords="8,397,273,390,259,459,32,480,5,432" shape="poly">
-    <area target="" alt="Kurushadai Theevu" title="Kurushadai Theevu" href="island.html" coords="88,807,285,861" shape="rect">
-    <area target="" alt="Dr.APJ Abdul Kalam Memorial" title="Dr.APJ Abdul Kalam Memorial" href="apj.html" coords="928,376,78" shape="circle">
-    <area target="" alt="Ramar Padam temple" title="Ramar Padam temple" href="temple.html" coords="1055,162,1264,228" shape="rect">
-    <area target="" alt="Holy Island Water Sports" title="Holy Island Water Sports" href="water.html" coords="1463,250,1716,312" shape="rect">
-</map>
-</body>
-
-apj.html
-
-{% load static %}
+## CODE
+### Map code:
+```
 <html>
     <head>
-        <title>Dr.APJ Abdul Kalam Memorial</title>
+        <title>Velachery</title>
+        <style>
+            h1{
+                font-family: Algerian;
+                color: rgb(236, 112, 11);
+                font-size: large;
+                
+            }
+        </style>
     </head>
-    <body bgcolor="purple">
-        <img src="{% static 'apjimg.jpg'%}" width="100%" height="50%">
-       <center><h1>Dr.APJ Abdul Kalam Memorial</h1></center>
-        <h4>The Dr. APJ Abdul Kalam Memorial is located at Pei Karumbu in Rameswaram, Tamil Nadu, where the former President of India and renowned scientist Dr. A.P.J. Abdul Kalam was laid to rest. The memorial was inaugurated in 2017 to honour his life and achievements. Built in a beautiful blend of Indian and Mughal architectural styles, it showcases his contributions to science, space research, and the nation’s development. The memorial displays his personal belongings, photographs, and models of rockets and missiles, inspiring visitors, especially students. It stands as a tribute to the “People’s President” who dedicated his life to education, science, and service to the country.</h4>
-      
-    </body>
-</html>
-
-island.html
-
-{% load static %}
-<html>
-    <head>
-        <title>Kurushadai Theevu</title>
-    </head>
-
-    <body bgcolor="blue">
-        <img src="{% static 'islandimg.jpeg'%}" width="100%" height="50%"> 
-        <center>
-        <h1>Kurushadai Theevu</h1> </center>
-        <h4>Kurushadai Theevu is a small uninhabited island near Mandapam in Ramanathapuram district, Tamil Nadu. It lies in the Gulf of Mannar and is famous for its rich seagrass beds, which serve as breeding grounds for pearls, prawns, crabs, and many fish species. Because of this unique ecosystem, the island is often called the “Biological Paradise of the Gulf of Mannar.” It is part of the Gulf of Mannar Marine National Park and is protected to conserve its rare marine biodiversity</h4>
+    <body>
+        <h1 align="center">welcome to Velachery\nBhuvaneshwaran</h1>
         
-
- 
-    </body>
-</html>
-
-pamban.html
-
-{% load static %}
-<html>
-    <head>
-        <title>Pamban Bridge</title>
-    </head>
-    <body bgcolor="orange">
-        <img src="{% static 'pambanimg.jpeg'%}" width="100%" height="50%">
         <center>
-        <h1>Pamban Bridge</h1>
-        </center>
-        <h4>The Pamban Bridge, located in Tamil Nadu, India, is a historic railway bridge that connects the town of Mandapam on the mainland with Rameswaram Island. Opened in 1914, it was India’s first sea bridge and remained the longest until the Bandra-Worli Sea Link was completed in 2010. Stretching about 2.3 kilometers over the Palk Strait, the bridge is an engineering marvel, especially known for its double-leaf bascule section that can be raised to allow ships to pass through. Its strategic location and unique design make it both a lifeline for transport and a tourist attraction, offering breathtaking views of the sea. Today, alongside the old railway bridge, a new road bridge also facilitates easier connectivity, but the century-old Pamban Bridge continues to stand as a symbol of resilience and innovation.</h4>
+            <img src="C:\Users\admin\Pictures\Screenshots\Screenshot 2024-10-10 111948.png"usemap="#mapnew">
+            
+            <map name="mapnew">
+                <area target="" alt="Pheonix Marketcity" title="Pheonix Mall " href="pheonix_Mall.html" coords="296,253,596,337" shape="rect">
+                <area target="" alt="Grand Mall" title="Grand Mall" href="grand_Mall.html" coords="310,210,50" shape="circle">
+                <area target="" alt="Coal Barbecues" title="Coal" href="coal.html" coords="520,487,667,569" shape="rect">
+                <area target="" alt="Kora Food Street" title="Kora_food_Street" href="kora_food_street.html" coords="355,417,39" shape="circle">
+                <area target="" alt="Dhandeeswaram Temple" title="Dhandeeswaram Temple" href="dhandeeswaram_temple.html" coords="341,450,562,503" shape="rect">
+                
+
+            
         
+            </map> 
+        </center> 
     </body>
 </html>
+```
+### Pheonix Marketcity:
+```<html>
+    <head>
+        <title>Pheonix Marketcity</title>
+    </head>
+    <body bgcolor="lavender">
+        <h1 align="center">PHEONIX MARKETCITY</h1>
+        <p>Phoenix MarketCity, located in Velachery, Chennai, is one of the largest and most vibrant shopping malls in the city. Since its opening in 2013, it has become a prime destination for shopping, dining, and entertainment, attracting a diverse crowd from across the region. The mall houses a vast array of retail outlets, offering both high-end luxury brands and popular fashion retailers, including international names like H&M, Zara, Marks & Spencer, and Sephora, alongside Indian favorites. It caters to various shopping preferences, making it a one-stop location for clothing, electronics, accessories, and home essentials, with anchor stores like Landmark, Lifestyle, and Home Centre.
 
-temple.html
+            In addition to shopping, Phoenix MarketCity is renowned for its extensive dining options. The food court is packed with fast-food chains like McDonald's, KFC, and Subway, providing quick bites, while numerous fine-dining restaurants and cafes such as Nando’s, Chili’s, and Starbucks offer a more leisurely experience. The mall also excels in entertainment, with its PVR Cinemas being a popular attraction for movie lovers, featuring the latest releases across multiple languages. Families and children can enjoy the gaming arcade, which offers a range of fun and interactive games.
+            
+            The mall frequently hosts live events, such as concerts, cultural performances, and brand promotions, adding to the vibrant atmosphere. Phoenix MarketCity is designed with convenience in mind, offering ample parking facilities, valet services, and easy accessibility through elevators and wide corridors, making it family-friendly and suitable for differently-abled visitors. Its strategic location in Velachery, a bustling residential and commercial hub, ensures that it is well-connected to the rest of the city, with the nearby Velachery Railway Station and a strong road network making it easily accessible.
+            
+            Overall, Phoenix MarketCity stands as a symbol of modern retail and entertainment in Chennai, blending shopping, dining, and leisure into a single destination, creating a dynamic and enjoyable experience for visitors of all ages.</p>
 
-{% load static %}
+            
+    </body>
+</html>
+```
+### Grand Mall:
+```
 <html>
     <head>
-        <title>Ramar Padam Temple</title>
+        <title>Grand mall</title>
     </head>
-    <body bgcolor="pink">
-        <img src="{% static 'templeimg.jpg'%}" width="100%" height="50%">
-        <center>
-        <h1>Ramar Padam Temple</h1>
-         </center>
-        <h4>Ramar Padam Temple, also called Ramar Patham, is located on Gandhamadhana Parvatham, about 3 km from the Ramanathaswamy Temple in Rameswaram, Ramanathapuram district. It is the highest point on the island and is famous for the footprint of Lord Rama carved on a stone chakra in the sanctum. According to legend, Lord Rama stood here while searching for Lanka after Sita was taken away by Ravana. The temple is a two-storeyed mandapam and offers a panoramic view of the sea and the island. This sacred site is an important stop for pilgrims visiting Rameswaram.</h4>
-       
+    <body bgcolor="lavender">
+        <h1 align="center">Grand Mall</h1>
+        <p>Grand Mall Velachery is a popular shopping and entertainment destination located on Velachery Main Road in Chennai. Known for its convenient location and easy accessibility, the mall attracts a diverse crowd from nearby residential and commercial areas. It offers a wide range of shopping options with both national and international brands like Max, Lifestyle, and Reliance Digital. Apart from shopping, the mall has a variety of dining options in its food court, including popular outlets such as KFC, Subway, and traditional Indian restaurants like Sangeetha. The mall also houses a PVR Cinemas, offering the latest movie releases for entertainment. With its combination of shopping, dining, and leisure, Grand Mall provides a well-rounded experience, making it a go-to spot for families, friends, and professionals in Velachery and nearby areas.
+
+
+
+
+
+
+        </p>
+
+            
     </body>
 </html>
-
-water.html
-
-{% load static %}
+```
+### Coal Barbecues:
+```
 <html>
     <head>
-        <title>Holy Island Water Sports</title>
+        <title>Coal Barbecues</title>
     </head>
-    <body bgcolor="orangr">
-        <img src="{% static 'waterimg.jpg'%}" width="100%" height="50%">
+    <body bgcolor="lavender">
+        <h1 align="center">Coal Barbecues</h1>
+        <p1>Coal Barbecues in Velachery, Chennai, is a popular dining destination known for its vibrant ambiance and mouth-watering buffet experience, particularly focusing on barbecue and grill-based dishes. Located conveniently in Velachery, it draws food enthusiasts who love indulging in a wide variety of starters, main courses, and desserts.
 
-        <center>
-        <h1>Holy Island Water Sports</h1>
-         </center>
-        <h4>Holy Island Water Sports is an adventure-water sports facility located at Holy Island Beach, Sangumall, Olaikadda Road, Rameswaram in Ramanathapuram district. Established in late 2014, it offers a wide range of both water-based and shoreline activities for tourists and locals alike.
+            The restaurant offers a live grill setup on each table, where diners can cook their own barbecued items, making it an interactive dining experience. The menu features a variety of vegetarian and non-vegetarian starters, including marinated kebabs, prawns, chicken wings, and paneer. Their signature barbecues, combined with exotic sauces and flavors, cater to different palates.
+            
+            In addition to the grills, Coal Barbecues offers an extensive buffet spread that includes Indian, continental, and Chinese dishes, along with a selection of salads, soups, and desserts. The desserts section features both traditional Indian sweets and western options like cakes and ice creams, making it a delightful end to the meal.
+            
+            The warm and welcoming ambiance, combined with the live grill concept, makes Coal Barbecues an ideal spot for family gatherings, celebrations, or casual dining with friends. Known for its great service and flavorful food, it’s a must-visit for barbecue lovers in Velachery.
 
- Visitors can enjoy thrilling rides such as jet ski, banana ride, bumper ride; water sports like kayaking, windsurfing, stand up paddle board; plus underwater exploration through snorkeling and scuba diving.
 
-Rameswaram Tourism
 
- For those less inclined to get wet, there are also glass bottom boat rides and land games like trampoline and mini-wheel.
 
- The facility runs daily from about 10:00 AM to 6-7 PM, and safety measures such as life jackets and trained guides are provided.</h4>
-       
+
+        </p>
+
+            
     </body>
 </html>
-
-views.py
-
-from django.shortcuts import render
-
-
-def map(request):
-    return render(request,"map.html")
-def apj(request):
-    return render(request,"apj.html")
-def island(request):
-    return render(request,"island.html")
-def pamban(request):
-    return render(request,"pamban.html")
-def temple(request):
-    return render(request,"temple.html")
-def water(request):
-    return render(request,"water.html")
-
-urls.py
-
-from django.contrib import admin
-from django.urls import path
-from mapapp import views
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('',views.map),
-    path('apj.html/',views.apj),
-    path('island.html/',views.island),
-    path('pamban.html/',views.pamban),
-    path('temple.html/',views.temple),
-    path('water.html/',views.water),
-]
-
-OUTPUT
-alt text alt text alt text alt text alt text alt text
-
-RESULT
-The program for implementing image maps using HTML is executed successfully.
-
-=======
-
-Ex04 Places Around Me
-Date:26/09/2025
-AIM
-To develop a website to display details about the places around my house.
-
-DESIGN STEPS
-STEP 1
-Create a Django admin interface.
-
-STEP 2
-Download your city map from Google.
-
-STEP 3
-Using tag name the map.
-
-STEP 4
-Create clickable regions in the image using tag.
-
-STEP 5
-Write HTML programs for all the regions identified.
-
-STEP 6
-Execute the programs and publish them.
-
-CODE
-map.html
-
-{% load static %}
-
-<title>RAMANATHAPURAM MAP</title>
-Kamalesh y (24004024)
-
-
-apj.html
-
-{% load static %}
-
-<title>Dr.APJ Abdul Kalam Memorial</title>
-
-
-Dr.APJ Abdul Kalam Memorial
-The Dr. APJ Abdul Kalam Memorial is located at Pei Karumbu in Rameswaram, Tamil Nadu, where the former President of India and renowned scientist Dr. A.P.J. Abdul Kalam was laid to rest. The memorial was inaugurated in 2017 to honour his life and achievements. Built in a beautiful blend of Indian and Mughal architectural styles, it showcases his contributions to science, space research, and the nation’s development. The memorial displays his personal belongings, photographs, and models of rockets and missiles, inspiring visitors, especially students. It stands as a tribute to the “People’s President” who dedicated his life to education, science, and service to the country.
-</body>
-island.html
-
-{% load static %}
-
-<title>Kurushadai Theevu</title>
-<body bgcolor="blue">
-    <img src="{% static 'islandimg.jpeg'%}" width="100%" height="50%"> 
-    <center>
-    <h1>Kurushadai Theevu</h1> </center>
-    <h4>Kurushadai Theevu is a small uninhabited island near Mandapam in Ramanathapuram district, Tamil Nadu. It lies in the Gulf of Mannar and is famous for its rich seagrass beds, which serve as breeding grounds for pearls, prawns, crabs, and many fish species. Because of this unique ecosystem, the island is often called the “Biological Paradise of the Gulf of Mannar.” It is part of the Gulf of Mannar Marine National Park and is protected to conserve its rare marine biodiversity</h4>
-    
-
-
-</body>
-pamban.html
-
-{% load static %}
-
-<title>Pamban Bridge</title>
-
-
-Pamban Bridge
-The Pamban Bridge, located in Tamil Nadu, India, is a historic railway bridge that connects the town of Mandapam on the mainland with Rameswaram Island. Opened in 1914, it was India’s first sea bridge and remained the longest until the Bandra-Worli Sea Link was completed in 2010. Stretching about 2.3 kilometers over the Palk Strait, the bridge is an engineering marvel, especially known for its double-leaf bascule section that can be raised to allow ships to pass through. Its strategic location and unique design make it both a lifeline for transport and a tourist attraction, offering breathtaking views of the sea. Today, alongside the old railway bridge, a new road bridge also facilitates easier connectivity, but the century-old Pamban Bridge continues to stand as a symbol of resilience and innovation.
-</body>
-temple.html
-
-{% load static %}
-
-<title>Ramar Padam Temple</title>
-
-
-Ramar Padam Temple
-Ramar Padam Temple, also called Ramar Patham, is located on Gandhamadhana Parvatham, about 3 km from the Ramanathaswamy Temple in Rameswaram, Ramanathapuram district. It is the highest point on the island and is famous for the footprint of Lord Rama carved on a stone chakra in the sanctum. According to legend, Lord Rama stood here while searching for Lanka after Sita was taken away by Ravana. The temple is a two-storeyed mandapam and offers a panoramic view of the sea and the island. This sacred site is an important stop for pilgrims visiting Rameswaram.
-</body>
-water.html
-
-{% load static %}
-
-<title>Holy Island Water Sports</title>
-
-
-    <center>
-    <h1>Holy Island Water Sports</h1>
-     </center>
-    <h4>Holy Island Water Sports is an adventure-water sports facility located at Holy Island Beach, Sangumall, Olaikadda Road, Rameswaram in Ramanathapuram district. Established in late 2014, it offers a wide range of both water-based and shoreline activities for tourists and locals alike.
-Visitors can enjoy thrilling rides such as jet ski, banana ride, bumper ride; water sports like kayaking, windsurfing, stand up paddle board; plus underwater exploration through snorkeling and scuba diving.
-
-Rameswaram Tourism
-
-For those less inclined to get wet, there are also glass bottom boat rides and land games like trampoline and mini-wheel.
-
-The facility runs daily from about 10:00 AM to 6-7 PM, and safety measures such as life jackets and trained guides are provided.
-
-</body>
-OUTPUT
-alt text alt text alt text alt text alt text alt text
-
-RESULT
-The program for implementing image maps using HTML is executed successfully.
-
-934442b (changed) ======= <<<<<<< HEAD
-
-Ex04 Places Around Me
-Date:26/09/2025
-AIM
-To develop a website to display details about the places around my house.
-
-DESIGN STEPS
-STEP 1
-Create a Django admin interface.
-
-STEP 2
-Download your city map from Google.
-
-STEP 3
-Using tag name the map.
-
-STEP 4
-Create clickable regions in the image using tag.
-
-STEP 5
-Write HTML programs for all the regions identified.
-
-STEP 6
-Execute the programs and publish them.
-
-CODE
-map.html
-
-<title>RAMANATHAPURAM MAP</title>
-<body>
-    <center><h1>MOHAMED ASARUDEEN A (25005844)</h1>
-<img src="rmd.png" usemap="#image-map"></center>
-
-<map name="image-map">
-    <area target="" alt="Pamban Bridge" title="Pamban Bridge" href="pamban.html" coords="8,397,273,390,259,459,32,480,5,432" shape="poly">
-    <area target="" alt="Kurushadai Theevu" title="Kurushadai Theevu" href="island.html" coords="88,807,285,861" shape="rect">
-    <area target="" alt="Dr.APJ Abdul Kalam Memorial" title="Dr.APJ Abdul Kalam Memorial" href="apj.html" coords="928,376,78" shape="circle">
-    <area target="" alt="Ramar Padam temple" title="Ramar Padam temple" href="temple.html" coords="1055,162,1264,228" shape="rect">
-    <area target="" alt="Holy Island Water Sports" title="Holy Island Water Sports" href="water.html" coords="1463,250,1716,312" shape="rect">
-</map>
-</body>
-
-apj.html
-
+```
+### Kora Food Street:
+```
 <html>
     <head>
-        <title>Dr.APJ Abdul Kalam Memorial</title>
+        <title>Kora Food Street</title>
     </head>
-    <body bgcolor="purple">
-        <img src="apjimg.jpg" width="100%" height="50%">
-       <center><h1>Dr.APJ Abdul Kalam Memorial</h1></center>
-        <h4>The Dr. APJ Abdul Kalam Memorial is located at Pei Karumbu in Rameswaram, Tamil Nadu, where the former President of India and renowned scientist Dr. A.P.J. Abdul Kalam was laid to rest. The memorial was inaugurated in 2017 to honour his life and achievements. Built in a beautiful blend of Indian and Mughal architectural styles, it showcases his contributions to science, space research, and the nation’s development. The memorial displays his personal belongings, photographs, and models of rockets and missiles, inspiring visitors, especially students. It stands as a tribute to the “People’s President” who dedicated his life to education, science, and service to the country.</h4>
-      
+    <body bgcolor="lavender">
+        <h1 align="center">Kora Food Street</h1>
+        <p1>Kora Food Street in Velachery, Chennai, is a bustling spot for food lovers, offering a wide variety of street food and quick bites in a vibrant and lively atmosphere. Known for its array of food stalls and vendors, Kora Food Street brings together flavors from different cuisines, making it a popular hangout for both locals and visitors looking for affordable and delicious food options.
+
+            The street is famous for serving a diverse range of dishes, from North Indian and South Indian snacks to Chinese and continental options. Popular items include chaats, momos, dosas, burgers, pizzas, and freshly grilled items. With each vendor specializing in a specific type of food, visitors can enjoy a mix of flavors in one place, making it perfect for groups with varied tastes.
+            
+            Kora Food Street is also known for its pocket-friendly prices, making it accessible to students, professionals, and families. The casual, open-air setup creates a street food vibe, adding to the charm of the place, especially in the evenings when it becomes a lively, social spot. Whether you're craving spicy chaats, sizzling kebabs, or sweet desserts, Kora Food Street offers a fulfilling and flavorful food experience in Velachery.</p>
+
+            
     </body>
 </html>
-
-island.html
-
+```
+### Dhandeeshwaram Temple:
+```
 <html>
     <head>
-        <title>Kurushadai Theevu</title>
+        <title>Dhandeeswaram Temple</title>
     </head>
+    <body bgcolor="lavender">
+        <h1 align="center">Dhandeeswaram Temple</h1>
+        <p>Dhandeeswaram Temple is an ancient and revered Hindu temple located in Velachery, Chennai. Dedicated to Lord Shiva, the temple holds significant religious and cultural importance in the area. The main deity, known as Dhandeeswarar, represents Lord Shiva in the form of a "Linga," with the temple also housing a shrine for Goddess Dharmasamvardhini, a form of Parvati.
 
-    <body bgcolor="blue">
-        <img src="islandimg.jpeg" width="100%" height="50%"> 
-        <center>
-        <h1>Kurushadai Theevu</h1> </center>
-        <h4>Kurushadai Theevu is a small uninhabited island near Mandapam in Ramanathapuram district, Tamil Nadu. It lies in the Gulf of Mannar and is famous for its rich seagrass beds, which serve as breeding grounds for pearls, prawns, crabs, and many fish species. Because of this unique ecosystem, the island is often called the “Biological Paradise of the Gulf of Mannar.” It is part of the Gulf of Mannar Marine National Park and is protected to conserve its rare marine biodiversity</h4>
-        
+            The temple’s architecture reflects traditional Dravidian styles, with intricately carved gopurams (temple towers) and stone pillars that give a sense of its historic heritage. Dhandeeswaram Temple is believed to be centuries old, and its serene environment makes it a peaceful spiritual retreat for devotees. The temple is especially crowded during important Hindu festivals such as Maha Shivaratri and Pradosham, when special rituals and prayers are conducted.
+            
+            Apart from its religious significance, the temple also plays a vital role in the community, with regular pujas, cultural events, and spiritual activities attracting devotees from across Chennai. Its location in the bustling Velachery area makes it a spiritual haven amid the urban environment, offering a place for reflection and worship.</p>
 
- 
+            
     </body>
 </html>
-
-pamban.html
-
-<html>
-    <head>
-        <title>Pamban Bridge</title>
-    </head>
-    <body bgcolor="orange">
-        <img src="pambanimg.jpeg" width="100%" height="50%">
-        <center>
-        <h1>Pamban Bridge</h1>
-        </center>
-        <h4>The Pamban Bridge, located in Tamil Nadu, India, is a historic railway bridge that connects the town of Mandapam on the mainland with Rameswaram Island. Opened in 1914, it was India’s first sea bridge and remained the longest until the Bandra-Worli Sea Link was completed in 2010. Stretching about 2.3 kilometers over the Palk Strait, the bridge is an engineering marvel, especially known for its double-leaf bascule section that can be raised to allow ships to pass through. Its strategic location and unique design make it both a lifeline for transport and a tourist attraction, offering breathtaking views of the sea. Today, alongside the old railway bridge, a new road bridge also facilitates easier connectivity, but the century-old Pamban Bridge continues to stand as a symbol of resilience and innovation.</h4>
-        
-    </body>
-</html>
-
-temple.html
-
-<html>
-    <head>
-        <title>Ramar Padam Temple</title>
-    </head>
-    <body bgcolor="pink">
-        <img src="templeimg.jpg" width="100%" height="50%">
-        <center>
-        <h1>Ramar Padam Temple</h1>
-         </center>
-        <h4>Ramar Padam Temple, also called Ramar Patham, is located on Gandhamadhana Parvatham, about 3 km from the Ramanathaswamy Temple in Rameswaram, Ramanathapuram district. It is the highest point on the island and is famous for the footprint of Lord Rama carved on a stone chakra in the sanctum. According to legend, Lord Rama stood here while searching for Lanka after Sita was taken away by Ravana. The temple is a two-storeyed mandapam and offers a panoramic view of the sea and the island. This sacred site is an important stop for pilgrims visiting Rameswaram.</h4>
-       
-    </body>
-</html>
-
-water.html
-
-<html>
-    <head>
-        <title>Holy Island Water Sports</title>
-    </head>
-    <body bgcolor="orangr">
-        <img src="waterimg.jpg" width="100%" height="50%">
-
-        <center>
-        <h1>Holy Island Water Sports</h1>
-         </center>
-        <h4>Holy Island Water Sports is an adventure-water sports facility located at Holy Island Beach, Sangumall, Olaikadda Road, Rameswaram in Ramanathapuram district. Established in late 2014, it offers a wide range of both water-based and shoreline activities for tourists and locals alike.
-
- Visitors can enjoy thrilling rides such as jet ski, banana ride, bumper ride; water sports like kayaking, windsurfing, stand up paddle board; plus underwater exploration through snorkeling and scuba diving.
-
-Rameswaram Tourism
-
- For those less inclined to get wet, there are also glass bottom boat rides and land games like trampoline and mini-wheel.
-
- The facility runs daily from about 10:00 AM to 6-7 PM, and safety measures such as life jackets and trained guides are provided.</h4>
-       
-    </body>
-</html>
-OUTPUT
-alt text alt text alt text alt text alt text alt text
-
-RESULT
-The program for implementing image maps using HTML is executed successfully.
-
-=======
-
-Ex04 Places Around Me
-Date:26/09/2025
-AIM
-To develop a website to display details about the places around my house.
-
-DESIGN STEPS
-STEP 1
-Create a Django admin interface.
-
-STEP 2
-Download your city map from Google.
-
-STEP 3
-Using tag name the map.
-
-STEP 4
-Create clickable regions in the image using tag.
-
-STEP 5
-Write HTML programs for all the regions identified.
-
-STEP 6
-Execute the programs and publish them.
-
-CODE
-map.html
-
-{% load static %}
-
-<title>RAMANATHAPURAM MAP</title>
-MOHAMED ASARUDEEN A (25005844)
+```
 
 
-apj.html
-
-{% load static %}
-
-<title>Dr.APJ Abdul Kalam Memorial</title>
-
-
-Dr.APJ Abdul Kalam Memorial
-The Dr. APJ Abdul Kalam Memorial is located at Pei Karumbu in Rameswaram, Tamil Nadu, where the former President of India and renowned scientist Dr. A.P.J. Abdul Kalam was laid to rest. The memorial was inaugurated in 2017 to honour his life and achievements. Built in a beautiful blend of Indian and Mughal architectural styles, it showcases his contributions to science, space research, and the nation’s development. The memorial displays his personal belongings, photographs, and models of rockets and missiles, inspiring visitors, especially students. It stands as a tribute to the “People’s President” who dedicated his life to education, science, and service to the country.
-</body>
-island.html
-
-{% load static %}
-
-<title>Kurushadai Theevu</title>
-<body bgcolor="blue">
-    <img src="{% static 'islandimg.jpeg'%}" width="100%" height="50%"> 
-    <center>
-    <h1>Kurushadai Theevu</h1> </center>
-    <h4>Kurushadai Theevu is a small uninhabited island near Mandapam in Ramanathapuram district, Tamil Nadu. It lies in the Gulf of Mannar and is famous for its rich seagrass beds, which serve as breeding grounds for pearls, prawns, crabs, and many fish species. Because of this unique ecosystem, the island is often called the “Biological Paradise of the Gulf of Mannar.” It is part of the Gulf of Mannar Marine National Park and is protected to conserve its rare marine biodiversity</h4>
-    
-
-
-</body>
-pamban.html
-
-{% load static %}
-
-<title>Pamban Bridge</title>
-
-
-Pamban Bridge
-The Pamban Bridge, located in Tamil Nadu, India, is a historic railway bridge that connects the town of Mandapam on the mainland with Rameswaram Island. Opened in 1914, it was India’s first sea bridge and remained the longest until the Bandra-Worli Sea Link was completed in 2010. Stretching about 2.3 kilometers over the Palk Strait, the bridge is an engineering marvel, especially known for its double-leaf bascule section that can be raised to allow ships to pass through. Its strategic location and unique design make it both a lifeline for transport and a tourist attraction, offering breathtaking views of the sea. Today, alongside the old railway bridge, a new road bridge also facilitates easier connectivity, but the century-old Pamban Bridge continues to stand as a symbol of resilience and innovation.
-</body>
-temple.html
-
-{% load static %}
-
-<title>Ramar Padam Temple</title>
-
-
-Ramar Padam Temple
-Ramar Padam Temple, also called Ramar Patham, is located on Gandhamadhana Parvatham, about 3 km from the Ramanathaswamy Temple in Rameswaram, Ramanathapuram district. It is the highest point on the island and is famous for the footprint of Lord Rama carved on a stone chakra in the sanctum. According to legend, Lord Rama stood here while searching for Lanka after Sita was taken away by Ravana. The temple is a two-storeyed mandapam and offers a panoramic view of the sea and the island. This sacred site is an important stop for pilgrims visiting Rameswaram.
-</body>
-water.html
-
-{% load static %}
-
-<title>Holy Island Water Sports</title>
-
-
-    <center>
-    <h1>Holy Island Water Sports</h1>
-     </center>
-    <h4>Holy Island Water Sports is an adventure-water sports facility located at Holy Island Beach, Sangumall, Olaikadda Road, Rameswaram in Ramanathapuram district. Established in late 2014, it offers a wide range of both water-based and shoreline activities for tourists and locals alike.
-Visitors can enjoy thrilling rides such as jet ski, banana ride, bumper ride; water sports like kayaking, windsurfing, stand up paddle board; plus underwater exploration through snorkeling and scuba diving.
-
-Rameswaram Tourism
-
-For those less inclined to get wet, there are also glass bottom boat rides and land games like trampoline and mini-wheel.
-
-The facility runs daily from about 10:00 AM to 6-7 PM, and safety measures such as life jackets and trained guides are provided.
-
-</body>
-OUTPUT
-alt text alt text alt text alt text alt text alt text
-
-RESULT
+## OUTPUT
+### Velachery Map:
+![Screenshot 2024-10-16 183826](https://github.com/user-attachments/assets/3ae7d020-d162-41c4-80e3-37a9a5119bcf)
+### Pheonix Marketcity:
+![Screenshot 2024-10-16 183905](https://github.com/user-attachments/assets/f4ccb89a-1d5e-4323-a3e4-fd5d18f5bce6)
+### Grand Mall:
+![Screenshot 2024-10-16 183921](https://github.com/user-attachments/assets/f32efc62-1911-43cc-a901-7a76fc04c5a0)
+### Coal Barbecues:
+![Screenshot 2024-10-16 183933](https://github.com/user-attachments/assets/3d3ef22d-e05e-4c4d-a446-ff92db1f77a0)
+### Kora Food Street:
+![Screenshot 2024-10-16 183945](https://github.com/user-attachments/assets/bf151262-82c7-42e6-b5c0-e832fdad43be)
+### Dhandeeshwaram Temple:
+![Screenshot 2024-10-16 183959](https://github.com/user-attachments/assets/2b382c05-fa67-4d3d-ba21-e76e50a40c2e)
+## RESULT
 The program for implementing image maps using HTML is executed successfully.
